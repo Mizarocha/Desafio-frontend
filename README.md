@@ -31,7 +31,10 @@ o https://jsonplaceholder.typicode.com/users/[ID]
 [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/html), [CSS](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/CSS_basics) e [JAVA SCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)              
  
 - Framework:   
-[React.js](https://pt-br.reactjs.org/)      
+[React.js](https://pt-br.reactjs.org/)     
+
+### Deploy: 
+- URL https://desafio-frontend-nine.vercel.app/
 
 ### Rodar Projeto:    
 
@@ -48,10 +51,6 @@ Para iniciar o comando da:
 ```
 npm start
 ``` 
-## Demostração: 
-
-<div align="center">
-</div>
 
 <h3 align="center"> Autora: Artemiza Rocha</h3>   
 
