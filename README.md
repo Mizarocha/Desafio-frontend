@@ -38,7 +38,7 @@ o https://jsonplaceholder.typicode.com/users/[ID]
 Clone o projeto com esse comando:
 
 ```
-https://github.com/Mizarocha/react-nutri.git
+https://github.com/Mizarocha/Desafio-frontend.git
 ```
 Instale a dependência do projeto:
 ```
