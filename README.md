@@ -51,9 +51,7 @@ npm start
 ## Demostração: 
 
 <div align="center">
-<img width=450 height=450 src=""/> 
-
- </div>
+</div>
 
 <h3 align="center"> Autora: Artemiza Rocha</h3>   
 
