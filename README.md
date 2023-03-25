@@ -21,6 +21,18 @@ o https://jsonplaceholder.typicode.com/users/[ID]
 
 ### Solução: 
 
+
+### Foi utilizado: 
+
+- Ferramenta:     
+[Visual Studio Code](https://code.visualstudio.com/)              
+
+- Linguagem:   
+[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/html), [CSS](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/CSS_basics) e [JAVA SCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)              
+ 
+- Framework:   
+[React.js](https://pt-br.reactjs.org/)      
+
 ### Rodar Projeto:    
 
 Clone o projeto com esse comando:
