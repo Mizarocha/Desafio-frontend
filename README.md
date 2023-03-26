@@ -32,6 +32,8 @@ Com o Async/await são a forma de escrever promises que nos permitam escrever c�
 
 A funções async/await é de simplificar o uso de forma síncrona das Promises e executar alguns procedimentos em um grupo de Promises. 
 Isso significa que agora é mais fácil pensar o código. Além disso, agora podemos usar as ferramentas síncronas, como o try/catch que foi usado para lidar com erros.
+Assim foi criada a função que irá consumir os dados da Api e dentro da função criei um try catch e depois vai executar a função no useEffect.
+Porque se tiver algum problema com a API, o código não quebra, porque tá dentro do try catch.
 
 
 ### Foi utilizado: 
