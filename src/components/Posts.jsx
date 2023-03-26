@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import P from "prop-types";
+import { API } from "../utils/constants";
 
 export const Posts = ({ post }) => {
   Posts.propTypes = {
@@ -12,13 +13,21 @@ export const Posts = ({ post }) => {
   const [comments, setComments] = useState([]);
   const [data, setData] = useState(undefined);
 
-  useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
-      .then((r) => r.json())
-      .then((comment) => setComments(comment));
+  const searchCommentsById = useCallback(async () => {
+    try {
+      await fetch(`${API.POSTS}/${post.id}/comments`)
+        .then((r) => r.json())
+        .then((comments) => setComments(comments));
+    } catch (error) {
+      console.log("searchPostsById error", error);
+    }
   }, [post]);
 
-  const searchComments = useCallback(() => {
+  useEffect(() => {
+    searchCommentsById();
+  }, [searchCommentsById]);
+
+  const handleComments = useCallback(() => {
     if (!comments) return;
     if (data?.length > 0) {
       setData([]);
@@ -35,20 +44,23 @@ export const Posts = ({ post }) => {
 
   return (
     <div key={post.id}>
-      <h2>{post.title}</h2>
-      <button className="botao" onClick={() => searchComments()}>
-        {comments.length} Comentários
-      </button>
-      {data?.length > 0 &&
-        data?.map((el) => {
-          return (
-            <div key={el.id} className="comentario">
-              <p>Name: {el.name}</p>
-              <button>Email: {el.email}</button>
-              <p>Comentário: {el.comment}</p>
-            </div>
-          );
-        })}
+      <h3>{post.title}</h3>
+      {comments.length ? (
+        <button className="botao" onClick={() => handleComments()}>
+          {comments.length || null} Comentários
+        </button>
+      ) : null}
+      {data?.length > 0
+        ? data?.map((el) => {
+            return (
+              <div key={el.id} className="items">
+                <p>Name: {el.name}</p>
+                <button>Email: {el.email}</button>
+                <p>Comentário: {el.comment}</p>
+              </div>
+            );
+          })
+        : null}
     </div>
   );
 };

@@ -1,16 +1,25 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
+
 import { Posts } from "../../components/Posts";
+import { Users } from "../Users";
+import { API } from "../../utils/constants";
 
 export const Main = () => {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      fetch("https://jsonplaceholder.typicode.com/posts")
+  const searchPosts = useCallback(async () => {
+    try {
+      await fetch(API.POSTS)
         .then((r) => r.json())
         .then((posts) => setPosts(posts));
-    }, 1000);
+    } catch (error) {
+      console.log("searchPosts error", error);
+    }
   }, []);
+
+  useEffect(() => {
+    searchPosts();
+  }, [searchPosts]);
 
   const mapPost = useMemo(
     () =>
@@ -22,5 +31,10 @@ export const Main = () => {
     [posts]
   );
 
-  return <div>{mapPost}</div>;
+  return (
+    <div>
+      <Users />
+      {mapPost}
+    </div>
+  );
 };

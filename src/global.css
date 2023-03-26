@@ -14,17 +14,36 @@ body {
   font-family: arial;
 }
 
-.botao {
-  text-align: center;
-  background-color: pink;
-  border-radius: 12px;
-  margin-top: 5px;
-  padding: 5px;
-  font-weight: bold;
+body h3 {
+  font-size: 20px;
+  color: pink;
 }
-
-.comentario {
+.botao {
   margin-bottom: 10px;
   margin: 8px;
   padding: 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.items {
+  margin: 5px;
+  padding: 8px;
+  font-family: arial;
+}
+
+.detalhes {
+  background-color: pink;
+  margin-bottom: 10px;
+  margin: 8px;
+  padding: 8px;
+  color: black;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.informaçao {
+  margin: 5px;
+  padding: 10px;
+  font-family: arial;
 }
