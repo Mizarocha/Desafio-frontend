@@ -20,6 +20,18 @@ o https://jsonplaceholder.typicode.com/users
 o https://jsonplaceholder.typicode.com/users/[ID]     
 
 ### Solução: 
+Projeto criado com Create React App.        
+Consumo os Posts no componente principal utilizando o método Fetch do próprio Javascript. Passo os dados da api para o componente Post através de Prop utilizando uma useMemo função, que faz uma comparação com os dados atuais para evitar renderizações desnecessárias.
+
+No componente Posts, consumo os comentários, passando o ID associado de cada post, e os renderizo através de um evento de onClick, que mostrará esses comentários.
+
+
+No componente DetailsUsers, consumo os detalhes, passando o ID associado de cada usuário, e os renderizo através de um evento de onClick, que mostrará os usuários.
+
+Com o Async/await são a forma de escrever promises que nos permitam escrever código assíncrono que parece síncrono.
+
+A funções async/await é de simplificar o uso de forma síncrona das Promises e executar alguns procedimentos em um grupo de Promises. 
+Isso significa que agora é mais fácil pensar o código. Além disso, agora podemos usar as ferramentas síncronas, como o try/catch que foi usado para lidar com erros.
 
 
 ### Foi utilizado: 
