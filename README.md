@@ -46,6 +46,8 @@ Isso significa que agora é mais fácil pensar o código. Além disso, agora pod
 [React.js](https://pt-br.reactjs.org/)     
 
 ### Deploy: 
+
+- [VERCEL](https://vercel.com/)
 - URL https://desafio-frontend-nine.vercel.app/
 
 ### Rodar Projeto:    
