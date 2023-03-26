@@ -32,8 +32,9 @@ export const Main = () => {
   );
 
   return (
-    <div>
+    <div className="titulo2">
       <Users />
+      <h1>Posts:</h1>
       {mapPost}
     </div>
   );

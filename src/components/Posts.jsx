@@ -41,12 +41,11 @@ export const Posts = ({ post }) => {
       setData([...result]);
     }
   }, [comments, data]);
-
   return (
-    <div key={post.id}>
-      <h3>{post.title}</h3>
+    <div key={post.id} className="container">
+      <h3>Posts, {post.title}</h3>
       {comments.length ? (
-        <button className="botao" onClick={() => handleComments()}>
+        <button onClick={() => handleComments()}>
           {comments.length || null} Comentários
         </button>
       ) : null}
@@ -54,9 +53,9 @@ export const Posts = ({ post }) => {
         ? data?.map((el) => {
             return (
               <div key={el.id} className="items">
-                <p>Name: {el.name}</p>
+                <ul>Name: {el.name}</ul>
                 <button>Email: {el.email}</button>
-                <p>Comentário: {el.comment}</p>
+                <ul>Comentário: {el.comment}</ul>
               </div>
             );
           })

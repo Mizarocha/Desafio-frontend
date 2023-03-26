@@ -29,5 +29,10 @@ export const Users = () => {
     [users]
   );
 
-  return <div>{mapUsers}</div>;
+  return (
+    <div className="título">
+      <h1>Usuários:</h1>
+      {mapUsers}
+    </div>
+  );
 };

@@ -2,48 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
 }
 
-body {
+.container {
   background-color: blueviolet;
   color: white;
   padding: 2rem;
-  text-align: center;
-  font-size: 15px;
-  font-family: arial;
+  text-align: right;
 }
 
-body h3 {
-  font-size: 20px;
-  color: pink;
+.titulo2 h1 {
+  margin: 10px;
+  text-align: center;
 }
-.botao {
+
+.container button {
   margin-bottom: 10px;
   margin: 8px;
   padding: 8px;
+  text-align: center;
   border-radius: 12px;
   font-weight: bold;
 }
 
 .items {
-  margin: 5px;
-  padding: 8px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
   font-family: arial;
 }
+.items button {
+  margin: 10px;
+}
 
-.detalhes {
+.container2 {
   background-color: pink;
+  padding: 2rem;
+  text-align: left;
+}
+
+.título h1 {
+  text-align: center;
+}
+
+.container2 button {
   margin-bottom: 10px;
   margin: 8px;
   padding: 8px;
-  color: black;
+  text-align: center;
   border-radius: 12px;
   font-weight: bold;
 }
 
-.informaçao {
-  margin: 5px;
-  padding: 10px;
+.dados {
+  margin: 10px;
+  text-align: center;
+  color: black;
+  font-size: 20px;
   font-family: arial;
+}
+
+.dados p {
+  color: red;
+}
+
+.dados h3 {
+  margin: 10px;
 }
